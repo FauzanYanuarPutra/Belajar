@@ -10,6 +10,10 @@ import (
 func main() {
 		router := gin.Default()
 
+		// data := 10
+
+		// fmt.Println(data)
+
 		router.GET("/", rootHandler)
 		router.GET("/about", aboutHandler)
 		router.GET("/books/:id/:title", booksHandler)
@@ -75,7 +79,6 @@ func postBooksHandler(c *gin.Context){
 	c.JSON(http.StatusOK, gin.H{
 		"title": BookInput.Title,
 		"price": BookInput.Price,
-
 	})
 
 
