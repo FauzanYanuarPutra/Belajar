@@ -11,8 +11,10 @@ func main() {
     r := gin.Default()
 		config.ConnectDB()
     routes.PaslonRoutes(r)
-    r.Run(":8080")
+    r.Run(":5000")
 }
+
+
 
 
 

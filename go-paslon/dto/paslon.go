@@ -1,8 +1,9 @@
 package dto
 
 type CreatePaslonDTO struct {
-	Name string `json:"name" binding:"required"`
-	Visi string `json:"visi" binding:"required"`
+	Name  string `json:"name" binding:"required"`
+	Visi  string `json:"visi" binding:"required"`
+	Image string `json:"image" binding:"omitempty"`
 }
 
 type UpdatePaslonDTO struct {
